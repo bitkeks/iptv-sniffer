@@ -35,6 +35,7 @@ while True:
         # If no packets were logged, skip
         if len(stats) == 0:
             print('No packets captured at {}'.format(timestamp_text))
+            sleep(5)
             continue
 
         targets = []  # Multiple iptv devices may use the same network
